@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,8 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + TS</title>
   </head>
+
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <h1>
+        Testing
+        <a href="https://web.dev/articles/light-dark">light-dark()</a> function
+        from CSS
+      </h1>
+      <div class="">
+        Theme mode setting:
+        <label
+          ><input name="color-scheme" type="radio" value="light dark" checked />
+          System</label
+        >
+        <label
+          ><input name="color-scheme" type="radio" value="light" /> Forced
+          Light</label
+        >
+        <label
+          ><input name="color-scheme" type="radio" value="dark" /> Forced
+          Dark</label
+        >
+      </div>
+      <p class="testing">
+        Use your operating system’s preferences to
+        <mark>switch between light and dark mode</mark>, or use one of the
+        options to force a mode
+      </p>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
